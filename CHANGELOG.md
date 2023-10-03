@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/hung-cybo/demo-release-please/compare/v2.1.0...v2.1.1) (2023-10-03)
+
+
+### Bug Fixes
+
+* fix feature 6 ([cb3bf3e](https://github.com/hung-cybo/demo-release-please/commit/cb3bf3e59d417c363c4f5d72626a4bb181856466))
+
 ## [2.1.0](https://github.com/hung-cybo/demo-release-please/compare/v2.0.0...v2.1.0) (2023-10-03)
 
 
