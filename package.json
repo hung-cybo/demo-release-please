@@ -4,7 +4,9 @@
   "author": "@hung-cybo",
   "main": "index.js",
   "description": "",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/hung-cybo/demo-release-please/issues"
   },
