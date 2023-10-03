@@ -11,7 +11,6 @@
       "versioning": "default",
       "include-component-in-tag": false,
       "include-v-in-tag": true,
-      "pull-request-title-pattern": "chore${scope}: release${component} ${version}"
     }
   }
 }
