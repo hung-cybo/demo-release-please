@@ -1,5 +1,4 @@
 {
-  "bootstrap-sha": "a1b1288bcfbd5c497f9b3e18c451a3f774a8fc5d",
   "packages": {
     ".": {
       "release-type": "node",
@@ -10,7 +9,8 @@
       "changelog-path": "CHANGELOG.md",
       "versioning": "default",
       "include-component-in-tag": false,
-      "include-v-in-tag": true
+      "include-v-in-tag": true,
+      "pull-request-title-pattern": "chore${scope}: release${component} ${version}"
     }
   }
 }
