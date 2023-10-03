@@ -12,6 +12,7 @@ jobs:
       pull-requests: write
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@ca6063f4ed81b55db15b8c42d1b6f7925866342d # v3
@@ -19,17 +20,60 @@ jobs:
         with:
           command: manifest
 
-  publish:
-    name: Publish to npm (fake)
+  rename:
+    name: Rename release title
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    needs: release
+    if: ${{ needs.release.outputs.release_created }}
+    env:
+      GH_REPO: ${{ github.repository }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - run: |
+          gh release edit ${{ needs.release.outputs.tag_name }} \
+          --title "Release demo-release-please ${{ needs.release.outputs.tag_name }}"
+
+  upload:
+    name: Upload executables
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     needs: release
     if: ${{ needs.release.outputs.release_created }}
     steps:
+      # setup ruby environment before running jonabc/setup-licensed
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby
+
+      - uses: jonabc/setup-licensed@d6b3a6f7058c2b40c06d205e13e15c2418977566 # renovate: tag=v1.1.4
+        with:
+          version: "4.x"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: actions/checkout@v4
+
       - uses: pnpm/action-setup@v2
+
       - uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "16"
           cache: "pnpm"
 
-      - run: pnpm install --frozen-lockfile
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - run: pnpm build
+
+  publish:
+    name: Publish release
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    needs: [ release, rename, upload ]
+    env:
+      GH_REPO: ${{ github.repository }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - run: gh release edit ${{ needs.release.outputs.tag_name }} --draft=false

@@ -18,7 +18,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "prettier --check '**/*.{json,md,yml,yaml}'",
-    "fix": "pnpm lint --write"
+    "fix": "pnpm lint --write",
+    "build": "node ./build-artifacts.js"
   },
   "devDependencies": {
     "prettier": "^3.0.3"
