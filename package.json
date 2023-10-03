@@ -1,0 +1,25 @@
+{
+  "name": "@hungnt2308/demo-release-please",
+  "version": "1.0.0",
+  "author": "@hung-cybo",
+  "main": "index.js",
+  "description": "",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/hung-cybo/demo-release-please/issues"
+  },
+  "homepage": "https://github.com/hung-cybo/demo-release-please#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hung-cybo/demo-release-please.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "prettier --check '**/*.{json,md,yml,yaml}'",
+    "fix": "pnpm lint --write"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  },
+  "packageManager": "pnpm@8.7.4"
+}
