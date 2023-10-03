@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.3](https://github.com/hung-cybo/demo-release-please/compare/v1.5.2...v1.5.3) (2023-10-03)
+
+
+### Bug Fixes
+
+* update release-please config ([f244b7f](https://github.com/hung-cybo/demo-release-please/commit/f244b7f652248873a27a1c0705358c034983e6ad))
+* update release-please config ([311dc7f](https://github.com/hung-cybo/demo-release-please/commit/311dc7ff345fb4256067b78cfc3d62389fd42545))
+
 ## [1.5.2](https://github.com/hung-cybo/demo-release-please/compare/v1.5.1...v1.5.2) (2023-10-03)
 
 
