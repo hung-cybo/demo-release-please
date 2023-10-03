@@ -1,5 +1,39 @@
 # Changelog
 
+## [3.0.0](https://github.com/hung-cybo/demo-release-please/compare/v2.1.1...v3.0.0) (2023-10-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* add new feature 5
+
+### Features
+
+* add new featur 02 ([ffc31a3](https://github.com/hung-cybo/demo-release-please/commit/ffc31a321377ea742df85662b2ce545ab14b1400))
+* add new feature 01 ([6f3e823](https://github.com/hung-cybo/demo-release-please/commit/6f3e82358a3aff59e47a96bf42301ed366bfd8fe))
+* add new feature 03 ([e6c8efc](https://github.com/hung-cybo/demo-release-please/commit/e6c8efca83daac28ec71d74a3f53b86dea3dfa14))
+* add new feature 04 ([7ae2680](https://github.com/hung-cybo/demo-release-please/commit/7ae268086b0ca3aa2819e36baae4711f669ca871))
+* add new feature 5 ([ca4eb7e](https://github.com/hung-cybo/demo-release-please/commit/ca4eb7ed67af7a9c85baa3a9776f26c9af325788))
+* add new feature 6 ([b4f518b](https://github.com/hung-cybo/demo-release-please/commit/b4f518b0a3345b1e8a02c367039670db72a38674))
+* adding new feature ([3db0700](https://github.com/hung-cybo/demo-release-please/commit/3db07008139e6656ddd314d2e9015d3865d3c8c2))
+
+
+### Bug Fixes
+
+* fix bug 01 ([ff91181](https://github.com/hung-cybo/demo-release-please/commit/ff91181726c80903045d5220b6983989124a8843))
+* fix feature 6 ([cb3bf3e](https://github.com/hung-cybo/demo-release-please/commit/cb3bf3e59d417c363c4f5d72626a4bb181856466))
+* fix feature 6 ([68f85f4](https://github.com/hung-cybo/demo-release-please/commit/68f85f47ef2b0593f217fce31f5f97b57dd79e5f))
+* fix prettier ([30fe1fe](https://github.com/hung-cybo/demo-release-please/commit/30fe1fe7e436c7d8dc76108fe0d4ea53de0d4375))
+* fix prettier ([5c04302](https://github.com/hung-cybo/demo-release-please/commit/5c0430288c896c79c2fe63e5786e9236c67ba126))
+* remove bootstrap-sha ([1fd6536](https://github.com/hung-cybo/demo-release-please/commit/1fd6536ff33204c851e4d6706673de86ff7df6d6))
+* remove pull-request-title-pattern ([ecd7117](https://github.com/hung-cybo/demo-release-please/commit/ecd71170a630344ef159f745700216be8a5e68a9))
+* syntax error ([94c57d7](https://github.com/hung-cybo/demo-release-please/commit/94c57d74a6c34294405d03bafbb162fbec44d262))
+* update release-please config ([f244b7f](https://github.com/hung-cybo/demo-release-please/commit/f244b7f652248873a27a1c0705358c034983e6ad))
+* update release-please config ([311dc7f](https://github.com/hung-cybo/demo-release-please/commit/311dc7ff345fb4256067b78cfc3d62389fd42545))
+* update release-please config ([5437bc3](https://github.com/hung-cybo/demo-release-please/commit/5437bc394fffceb423dc9b980fafc9a03ed73141))
+* update release-please config 1 ([64a9f78](https://github.com/hung-cybo/demo-release-please/commit/64a9f78208ad0a55ee0d746303cb4cc9fecceea2))
+* update release-please config 2 ([44cfe97](https://github.com/hung-cybo/demo-release-please/commit/44cfe970643b06e899b34155c614971bd90ad456))
+
 ## [2.1.1](https://github.com/hung-cybo/demo-release-please/compare/v2.1.0...v2.1.1) (2023-10-03)
 
 
