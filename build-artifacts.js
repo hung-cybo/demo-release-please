@@ -3,4 +3,4 @@ function sleep(ms) {
 }
 
 console.log('Hello');
-sleep(10000).then(() => { console.log('World!'); });
+sleep(5000).then(() => { console.log('World!'); });
