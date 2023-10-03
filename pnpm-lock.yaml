@@ -1,11 +1,10 @@
-lockfileVersion: '6.0'
+lockfileVersion: "6.0"
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
 importers:
-
   .:
     devDependencies:
       prettier:
@@ -14,25 +13,27 @@ importers:
 
   packages/package-a:
     dependencies:
-      '@hungnt2308/package-b':
+      "@hungnt2308/package-b":
         specifier: ^1.1.5
         version: link:../package-b
-      '@hungnt2308/package-c':
+      "@hungnt2308/package-c":
         specifier: ^4.1.0
         version: link:../package-c
 
   packages/package-b:
     dependencies:
-      '@hungnt2308/package-c':
+      "@hungnt2308/package-c":
         specifier: ^4.1.0
         version: link:../package-c
 
   packages/package-c: {}
 
 packages:
-
   /prettier@3.0.3:
-    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
-    engines: {node: '>=14'}
+    resolution:
+      {
+        integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==,
+      }
+    engines: { node: ">=14" }
     hasBin: true
     dev: true
