@@ -1,5 +1,4 @@
 {
-  "bootstrap-sha": "bab3c068a4d76d90839f2a666d31956bfc827f8a",
   "packages": {
     ".": {
       "release-type": "node",
