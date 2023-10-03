@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/hung-cybo/demo-release-please/compare/2.3.2...2.4.0) (2023-10-03)
+
+
+### Features
+
+* add new feature 9 ([d1d61b7](https://github.com/hung-cybo/demo-release-please/commit/d1d61b76a2968d0d2cbfaa57c4e02f291235ea28))
+
 ## [2.3.2](https://github.com/hung-cybo/demo-release-please/compare/v2.3.1...2.3.2) (2023-10-03)
 
 
