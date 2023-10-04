@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.1](https://github.com/hung-cybo/demo-release-please/compare/2.4.0...2.4.1) (2023-10-04)
+
+
+### Bug Fixes
+
+* issue 9 ([92ee64c](https://github.com/hung-cybo/demo-release-please/commit/92ee64c3d6aa72142cb52c3964d842181bc0e0d3))
+
 ## [2.4.0](https://github.com/hung-cybo/demo-release-please/compare/2.3.2...2.4.0) (2023-10-03)
 
 
